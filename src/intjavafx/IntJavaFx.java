@@ -5,6 +5,7 @@
  */
 package intjavafx;
 
+import intjavafx.stream.StreamApiTest;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
@@ -28,6 +29,8 @@ public class IntJavaFx extends Application {
             @Override
             public void handle(ActionEvent event) {
                 System.out.println("Hello World!");
+                new StreamApiTest().test();
+                
             }
         });
         
