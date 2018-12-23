@@ -1,1 +1,3 @@
 # IntJavaFx
+
+Sample project
