@@ -17,9 +17,8 @@ import java.util.Timer;
 public class StreamApiTest {
 
     long startTime;
-    
-    //Here stream takes more time to execute
 
+    //Here stream takes more time to execute
     public void test() {
 
         List<Integer> list = new ArrayList<>();
@@ -48,15 +47,25 @@ public class StreamApiTest {
         start();
         System.out.println("sumStream():" + sumStream(list));
         end();
-        
+
         start();
         System.out.println("sumIterator():" + sumIterator(list));
         end();
+
+        start();
+        System.out.println("soutAll():");
+        soutAll(list);
+        end();
         
-        
-        
-        
-              
+        start();
+        System.out.println("soutAllWithLimit():");
+        soutAllWithLimit(list);
+        end();
+
+        start();
+        System.out.println("soutAllOdd():");
+        soutAllOdd(list);
+        end();
 
     }
 
@@ -76,6 +85,18 @@ public class StreamApiTest {
         return list.stream().filter(i -> i > 10).mapToInt(i -> i).sum();
     }
 
+    private void soutAll(List<Integer> list) {
+        list.stream().forEach(System.out::println);
+    }
+    
+    private void soutAllWithLimit(List<Integer> list) {
+        list.stream().limit(5).forEach(System.out::println);
+    }
+
+    private void soutAllOdd(List<Integer> list) {
+        list.stream().filter(i -> i % 2 == 1).forEach(System.out::println);
+    }
+
     public void start() {
         startTime = System.nanoTime();
 
@@ -84,7 +105,7 @@ public class StreamApiTest {
     public void end() {
         long endTime = System.nanoTime();
         long totalTime = endTime - startTime;
-        System.out.println((totalTime/1000));
+        System.out.println((totalTime / 1000));
     }
 
 }
