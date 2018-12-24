@@ -8,7 +8,9 @@ package intjavafx.stream;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 import java.util.Timer;
+import java.util.stream.Collectors;
 
 /**
  *
@@ -66,6 +68,25 @@ public class StreamApiTest {
         System.out.println("soutAllOdd():");
         soutAllOdd(list);
         end();
+        
+         start();
+        System.out.println("sort():");
+        sort(list);
+        end();
+        
+        start();
+        System.out.println("findSquire():");
+        findSquire(list);
+        end();
+        
+        start();
+        System.out.println("findSquireParallel():");
+        findSquireParallel(list);
+        end();
+        
+        
+        
+        
 
     }
 
@@ -101,6 +122,24 @@ public class StreamApiTest {
         startTime = System.nanoTime();
 
     }
+    
+    private void sort(List<Integer> list) {
+        list.stream().sorted().forEach(System.out::println);
+    }
+    
+    
+    private void findSquire(List<Integer> list) {
+        List square = list.stream().map(x->x*x).collect(Collectors.toList());
+        square.forEach(System.out::println);
+    }
+    
+    private void findSquireParallel(List<Integer> list) {
+        List square = list.parallelStream().map(x->x*x).collect(Collectors.toList());
+        square.forEach(System.out::println);
+    }
+    
+    
+    
 
     public void end() {
         long endTime = System.nanoTime();

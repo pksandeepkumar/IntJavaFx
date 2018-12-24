@@ -50,6 +50,6 @@ public class PredicateTest {
 
         boolean outcome = hasLengthOf10.or(containsLetterA).test(containsA);
 
-        System.out.println(outcome);
+        System.out.println(outcome);// true
     }
 }

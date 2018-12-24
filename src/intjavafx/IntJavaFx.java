@@ -30,9 +30,9 @@ public class IntJavaFx extends Application {
             @Override
             public void handle(ActionEvent event) {
                 System.out.println("Hello World!");
-                new PredicateTest().test3();
+//                new PredicateTest().test3();
 //                new PredicateTest().test1();
-//                new StreamApiTest().test();
+                new StreamApiTest().test();
                 
             }
         });
