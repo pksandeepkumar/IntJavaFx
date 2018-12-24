@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package interviewtest.ibstest;
+package intjavafx.ibstest;
 
 /**
  *
@@ -13,7 +13,8 @@ public class IbsTestClass {
     
     public void test() {
         Boolean value1 = new Boolean(true);
-        Boolean value2 = new Boolean("asdasdasdas");
+        Boolean value2 = new Boolean("asdasdasdas");// if "true" -> true
+        //others false
         
         System.err.println("value1:" + value1);
         System.err.println("value2:" + value2);

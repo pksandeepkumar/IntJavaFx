@@ -3,9 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package interviewtest.externalizable;
+package intjavafx.externalizable;
 
-import interviewtest.serializable.*;
 import java.io.Externalizable;
 import java.io.IOException;
 import java.io.ObjectInput;
