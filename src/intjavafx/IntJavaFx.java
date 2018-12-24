@@ -5,6 +5,7 @@
  */
 package intjavafx;
 
+import intjavafx.predicatetest.PredicateTest;
 import intjavafx.stream.StreamApiTest;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
@@ -29,7 +30,9 @@ public class IntJavaFx extends Application {
             @Override
             public void handle(ActionEvent event) {
                 System.out.println("Hello World!");
-                new StreamApiTest().test();
+                new PredicateTest().test3();
+//                new PredicateTest().test1();
+//                new StreamApiTest().test();
                 
             }
         });
