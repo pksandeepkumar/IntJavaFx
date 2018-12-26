@@ -12,7 +12,7 @@ package intjavafx.aptitude;
 public class AptitudeTest {
     
     public void test1() {
-        System.err.println("Test 1");
+        System.err.println("Test 1 from aptitiude");
     }
     
 }
