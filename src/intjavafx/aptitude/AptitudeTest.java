@@ -13,7 +13,7 @@ public class AptitudeTest {
     
     public void test1() {
 
-        System.err.println("Test 1 merged one conflict resolved");
+        System.err.println("Test 1 merged one conflict resolved tagged");
 
     }
     
