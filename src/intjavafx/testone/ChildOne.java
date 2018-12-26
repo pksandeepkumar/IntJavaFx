@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package interviewtest.testone;
+package intjavafx.testone;
 
-import interviewtest.annotation.MethodInfo;
+import intjavafx.annotation.MethodInfo;
 import java.util.Comparator;
 
 /**
