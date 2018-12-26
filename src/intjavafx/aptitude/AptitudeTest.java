@@ -12,7 +12,9 @@ package intjavafx.aptitude;
 public class AptitudeTest {
     
     public void test1() {
-        System.err.println("Test 1 master Change");
+
+        System.err.println("Test 1 merged one conflict resolved");
+
     }
     
 }
