@@ -46,48 +46,71 @@ public class StreamApiTest {
         list.add(11);
         list.add(1);
 
+//        start();
+//        System.out.println("sumStream():" + sumStream(list));
+//        end();
+//
+//        start();
+//        System.out.println("sumIterator():" + sumIterator(list));
+//        end();
+//
+//        start();
+//        System.out.println("soutAll():");
+//        soutAll(list);
+//        end();
+//        
+//        start();
+//        System.out.println("soutAllWithLimit():");
+//        soutAllWithLimit(list);
+//        end();
+//
+//        start();
+//        System.out.println("soutAllOdd():");
+//        soutAllOdd(list);
+//        end();
+//        
+//         start();
+//        System.out.println("sort():");
+//        sort(list);
+//        end();
+//        
+//        start();
+//        System.out.println("findSquire():");
+//        findSquire(list);
+//        end();
+//        
+//        start();
+//        System.out.println("findSquireParallel():");
+//        findSquireParallel(list);
+//        end();
+        
         start();
-        System.out.println("sumStream():" + sumStream(list));
+        System.out.println("onCustomObject():");
+        onCustomObject();
         end();
+        
+        
+        
+        
+        
+        
 
-        start();
-        System.out.println("sumIterator():" + sumIterator(list));
-        end();
-
-        start();
-        System.out.println("soutAll():");
-        soutAll(list);
-        end();
+    }
+    
+    private void onCustomObject() {
+        List<Employee> employee = new ArrayList<Employee>();
+        employee.add(new Employee("Sandeep", 1));
+        employee.add(new Employee("Kavitha", 2));
+        employee.add(new Employee("Gipson", 3));
+        employee.add(new Employee("Geo", 4));
+        employee.add(new Employee("Vishnu", 5));
+        employee.add(new Employee("Bipin", 6));
         
-        start();
-        System.out.println("soutAllWithLimit():");
-        soutAllWithLimit(list);
-        end();
-
-        start();
-        System.out.println("soutAllOdd():");
-        soutAllOdd(list);
-        end();
+        //If no element present java.util.NoSuchElementException for optional will raise
+        System.err.println("Name:" +  employee.stream().filter(i -> i.empId == 6).findFirst().get().name);
         
-         start();
-        System.out.println("sort():");
-        sort(list);
-        end();
-        
-        start();
-        System.out.println("findSquire():");
-        findSquire(list);
-        end();
-        
-        start();
-        System.out.println("findSquireParallel():");
-        findSquireParallel(list);
-        end();
-        
-        
-        
-        
-
+        System.err.println("Print all names");
+        employee.stream().forEach(System.out::println);
     }
 
     private static int sumIterator(List<Integer> list) {
