@@ -7,10 +7,8 @@ package intjavafx.interfacetest;
 
 /**
  *
- * @author sandeep
+ * @author sandeepkumar
  */
-public interface SampleInterface extends Parent, Parent2{//Here we cannot extends two classes,
-    //but we can extends two interfaces
+public class ExtendChild extends ExtendParent1 {
     
-    public int sampleInterfaceMethod();
 }
