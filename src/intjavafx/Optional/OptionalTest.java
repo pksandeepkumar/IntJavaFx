@@ -36,7 +36,7 @@ public class OptionalTest  {
       //the default value passed.
       Integer value1 = a.orElse(new Integer(0));
 		
-      //Optional.get - gets the value, value should be present
+      //Optional.get - gets the value, value should be present if no value NoSuchElementException will return
       Integer value2 = b.get();
       return value1 + value2;
    }

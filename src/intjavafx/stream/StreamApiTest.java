@@ -122,6 +122,7 @@ public class StreamApiTest {
                 sum += num;
             }
         }
+        String s = "";
         return sum;
     }
 
