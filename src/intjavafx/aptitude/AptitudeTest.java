@@ -13,7 +13,10 @@ public class AptitudeTest {
     
     public void test1() {
 
-        System.err.println("Test 1 merged one conflict resolved tagged");
+        int x = 100;
+        double y = 100.1;
+        boolean b = (x == y); /* Line 7 */
+        System.out.println(b);
 
     }
     
