@@ -5,6 +5,7 @@
  */
 package intjavafx;
 
+import intjavafx.exceptiontest.ExceptionTest;
 import intjavafx.polymorphism.PolymorphismTest;
 import intjavafx.predicatetest.PredicateTest;
 import intjavafx.stream.StreamApiTest;
@@ -34,7 +35,8 @@ public class IntJavaFx extends Application {
 //                new PredicateTest().test3();
 //                new PredicateTest().test1();
 //                new StreamApiTest().test();
-                  new PolymorphismTest().test();
+//                  new PolymorphismTest().test();
+                new ExceptionTest().test();
                 
             }
         });

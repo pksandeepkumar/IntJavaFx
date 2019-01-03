@@ -18,6 +18,8 @@ public class PolymorphismTest {
         p.method1();
         p.method2();
         
+        
+        
 //        Output
 //        Child method1()
 //        Parent method2()
