@@ -11,8 +11,14 @@ package intjavafx.polymorphism;
  */
 public class Parent {
     
+    public void method2() {
+        System.err.println("Parent method2()");
+        method1();
+    }
+    
+    
     public Integer method1() {
-        System.err.println("Object method1()");
+        System.err.println("Parent method1()");
         return null;
     }
     

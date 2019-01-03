@@ -12,5 +12,16 @@ package intjavafx.polymorphism;
 public class PolymorphismTest {
     
     
-    
+    public void test() {
+        
+        Parent p = new Child();
+        p.method1();
+        p.method2();
+        
+//        Output
+//        Child method1()
+//        Parent method2()
+//        Child method1()
+                
+    }
 }

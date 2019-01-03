@@ -11,8 +11,11 @@ package intjavafx.polymorphism;
  */
 public class Child extends Parent{
 
-   
-    
+    @Override
+    public Integer method1() {
+        System.err.println("Child method1()");
+        return null;
+    }
     
     
 }
