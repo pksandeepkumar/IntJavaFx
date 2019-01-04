@@ -30,7 +30,9 @@ public class ExceptionTest {
         } catch( ArithmeticException e) {
             System.err.println("Catch function 2()");
         } finally {
-            System.err.println(" function 2() finally");
+            System.err.println(" function 2() finally"); //This finally will be always
+//            excecute wether we catch exception or not, if we do not catch the finaly block will execute 
+// and application exits
         }
         System.err.println("End of try");
     }
