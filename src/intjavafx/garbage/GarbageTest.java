@@ -28,7 +28,8 @@ public class GarbageTest {
         obj1 = new ObjOne("Gipson");
         obj1 = new ObjOne("Vishnu");
         obj1 =null;
-        System.gc();
+        System.gc();//If this is commented Gipson and vishnu not garbaged,
+        //order of garbaging is random
         
         Thread thread = new Thread(new Runnable() {
             @Override
