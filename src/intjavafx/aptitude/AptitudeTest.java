@@ -11,6 +11,10 @@ package intjavafx.aptitude;
  */
 public class AptitudeTest {
     
+    public static void main(String[] args) {
+        System.err.println("Count:" + new AptitudeTest().getCont("carhskkcarjksfcarkjksdcarlkl","car" ));
+    }
+    
     public void test1() {
 
         int x = 100;
@@ -18,6 +22,26 @@ public class AptitudeTest {
         boolean b = (x == y); /* Line 7 */
         System.out.println(b);
 
+    }
+    
+    //Find nmber of occurance in a string with substring
+    public int getCont(String str, String sub) {
+        int count =0;
+        for( int i =0, j =0; i < str.length(); i++) {
+            
+            if(str.charAt(i) != sub.charAt(j)) {
+                j = 0;
+            } else {
+                j++;
+            }
+            
+            
+            if( j == sub.length()) {
+                count++;
+                j = 0;
+            }
+        } 
+        return count;
     }
     
 }
